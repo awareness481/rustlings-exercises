@@ -6,9 +6,7 @@
 // Obtain the number of bytes (not characters) in the given argument
 // Add the AsRef trait appropriately as a trait bound
 fn byte_counter<T: AsRef<str>>(arg: T) -> usize {
-    // arg.as_ref().as_bytes().len()
-    // https://github.com/rust-lang/rustlings/issues/811
-    12
+    arg.as_ref().as_bytes().len()
 }
 
 // Obtain the number of characters (not bytes) in the given argument
